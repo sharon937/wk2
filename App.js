@@ -1,15 +1,21 @@
 import React from "react-native";
-import{View} from "react-native";
+import{SafeAreaView, StatusBar, View, Image, StyleSheet ,Text} from "react-native";
 import Header from "./src/components/Header";
+import AlbumList from "./src/components/AlbumList";
 const App = () => {
   return (
-    <View>
+    <SafeAreaView style={styles.container}>
+      <StatusBar />
       <Header />
-    </View>
-    
-
+      <AlbumList />
+    </SafeAreaView>
   );
 };
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+  },
+});
 
 
 

@@ -1,16 +1,13 @@
 import React from "react-native";
-import {  StyleSheet, Text,View, StatusBar, SafeAreaView } from "react-native";
+import {  StyleSheet, Text,View, StatusBar } from "react-native";
 
 const Header = () => {
     return (
-      <SafeAreaView style={{ flex: 1 }}>
-        <StatusBar />
         <View style={styles.headerStyle}>
           <Text style={styles.textStyle}>
             Troye Sivan
           </Text>
         </View>
-      </SafeAreaView>
     );
   };
 
